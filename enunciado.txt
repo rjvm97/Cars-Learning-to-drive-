@@ -1,0 +1,47 @@
+Trabalho de IA
+Corrida de Carros
+
+Construa uma rede neural na qual o aprendizado será relizado utilizando algoritmos genéticos.
+
+Você pode alterar livremente o código fornecido para o trabalho. 
+
+Você deverá definir:
+- a função de fitness
+- a topologia, 
+- o número de indivíduos da cada geração
+- taxa de mutação
+- crossover
+
+ENTRADA DA REDE
+Na linha 230 é onde você poderá opter as entradas para a sua rede neural. O método car.get_sonar_values(screen, angles, distances). Os parâmetros angles e distances são os ângulos e a distância máxima de cada sonar. Veja que você pode definir qualquer ângulo e em qualquer quantidade aumentando o tamanha da lista.
+
+SAIDA DA REDE
+A saída da sua rede neural deverá alterar os parâmetros car.forward e car.direction, fica a seu critério como isso irá acontecer. O forward indica a velocidade do veículo e direction representa o ângulo que o carro deve seguir.
+
+No código, esses parâmetros são alterados pela chamada de eval_event(events) que obtem comandos do teclado. Você deverá substituir a chamda de eval_eventos por outro método que pegará a saida de sua rede neural que deverá ser construido dentro da classe RaceObject.
+
+OBSERVAÇÕES
+
+- Veja que o código permite você instanciar mais de um carro simultâneamente, o que permite colocar mais de um indivíduo para a avaliação no algoritmo genético.
+
+- A função de fitness é algo que você deverá definir. 
+
+- É importante que o seu código tenha a possibilidade de salvar os melhores indivíduos em disco (veja a bibliteca pickle)
+
+- Existe um exemplo de construção de rede neural em (https://www.youtube.com/watch?v=h3l4qz76JhQ veja que esse exemplo utiliza backprop.. e você deverá utilizar algoritmo genético para realizar o aprendizado)
+
+E o mais importante de tudo: have fun!
+
+
+Entrega: Você deverá entregar:
+
+-  car.py 
+-  video no youtube do código em funcionamento com os melhores indivíduos obtidos. 
+-  readme.txt (dentro do readme você deve explicar o que foi feito e também o link para o vídeo)
+
+ 
+
+
+
+
+
