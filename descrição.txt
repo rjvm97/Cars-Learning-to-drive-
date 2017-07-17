@@ -1,0 +1,9 @@
+Utilizou-se do mlp aplicado às saídas do sonar com regressão logística para gerar coeficienter entre 0 e 1
+para as decisões de direção e velocidade de cada carro.
+A função de avaliação (fitness) baseou-se no tempo em que o carro movimenta sem colidir. 
+A seleção seleciona dos dois melhores indivíduos para o cross-over.
+Em seguida, no crossover, esses dois melhores têm seus genes repassados para a nova geração alternando a forma como é feita tal 
+passagem baseando-se nas posições pares e ímpares do vetor de carros "cars".
+Na mutação sorteia-se uma posição das matrizes de syn0 e syn1 para incrementar a ela a multiplicação de um valor ponto flutuante
+com o próprio valor da posição.
+Por fim, atualiza-se o arquivo "individuos.pickle" com a nova geração para a seguinte iteração de execução.
